@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block title %}Write{% endblock %}
+
+{% block content %}
+    <div class="image-container">
+        <div class="image-bg">
+            <div class="diary-container">
+                <p style="text-align: right;">{{ date }}</p>
+                <h1>Dear Diary,</h1>
+
+                <div class="conversation-history">
+                   <ul class="conversation-list center-text">
+                       {% for message in conversation %}
+                        <p class="{% if message.role == 'user' %}message{% else %}response{% endif %}">
+                           {{ message.content }}
+                       </p>
+                       {% endfor %}
+                   </ul>
+                </div>
+                <form method="POST">
+                    <div class="form-group">
+                        <textarea class="form-control" id="entry" name="entry" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-light" style="margin-top: 15px">Send</button>
+                </form>
+                <form method="POST" action="/reset">
+                    <button type="submit" class="btn btn-outline-dark" style="margin-top: 15px">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+

@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-bg {
+    background-image: url("/static/diarybackground.png");
+    background-size: contain;
+    background-position: calc(50% - 10px) top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.diary-container {
+    position: relative;
+    padding: 20px;
+    max-width: 650px;
+    margin: 50px auto;
+}
+
+.title-container {
+    background-color: #F2F1F1;
+    text-align: center;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 10px solid #BA879B;
+}
+
+
+.color-bg {
+    background-color: #F2F1F1
+}
+
+.center-text {
+    text-align: center;
+}
+
+.message {
+    color: black;
+}
+
+.response {
+    color: #F2F1F1;
+}
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
