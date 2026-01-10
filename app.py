@@ -6,10 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = OpenAI()
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
-
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 # Make true to test with entry limit
 editMode = False
