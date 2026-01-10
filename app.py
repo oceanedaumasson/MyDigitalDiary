@@ -2,9 +2,6 @@ from flask import Flask, render_template, request, session, redirect, url_for
 from openai import OpenAI
 import datetime
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
