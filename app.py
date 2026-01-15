@@ -43,7 +43,12 @@ def write():
                         "and emotional state. Avoid generic AI phrases."
                     )
                 }
-
+                
+                completion = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[system_prompt] + session["conversation"]
+                )
+                
                 response = completion.choices[0].message.content
 
             except Exception as e:
