@@ -35,8 +35,7 @@ def write():
             session["entryCount"] += 1
 
             try:
-                 
-             system_prompt = {
+                system_prompt = {
                     "role": "system",
                     "content": (
                         "Imagine you are my personal diary. Respond naturally "
