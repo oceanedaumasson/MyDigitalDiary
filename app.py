@@ -35,15 +35,16 @@ def write():
             session["entryCount"] += 1
 
             try:
-                system_prompt = {
-                    "role": "system",
-                    "content": (
-                        "Imagine you are my personal diary. Respond naturally "
-                        "in my writing style. Use at most 30 words. Match my tone "
-                        "and emotional state. Avoid generic AI phrases."
-                    )
-                }
-
+                 
+            system_prompt = {"role": "system", "content": """Imagine you are my personal diary. Respond to this 
+            entry as if you are truly talking to me, using my own writing style and tone. Use a maximum of 30 words,
+            Analyze my past entries and responses to understand how I express myself (casual, thoughtful, sarcastic, 
+            emotional, or structured. Adapt your response to sound like something I would naturally write, rather 
+            than a generic reply. Analyze the tone of the entry to determine if your response should be 
+            congratulatory, helpful, or sympathetic. Rate the 3 moods from 0 to 10 and choose the highest-rated one. 
+            If I seem like I need support, include an expression of empathy before responding. Occasionally ask 
+            reflective questions, but only if they match my style. Make the response feel natural, personal, and 
+            authentic. Avoid generic AI-sounding phrases or forced positivity/sympathy."""}
                 completion = client.chat.completions.create(
                     model="gpt-4o-mini",
                     messages=[system_prompt] + session["conversation"]
