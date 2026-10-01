@@ -16,6 +16,6 @@ Users write diary entries and receive AI-generated responses. The focus was on h
 - User input handling and form submission
 - OpenAI API integration, including prompt construction and error handling
 - Custom visual layout and background design
-- 
+  
 ## Built with
 Python, Flask, HTML, CSS, JavaScript, OpenAI API. Deployed on Render.
