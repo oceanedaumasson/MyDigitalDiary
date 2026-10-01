@@ -4,7 +4,8 @@ An interactive diary built as a full-stack, multi-page web app using the OpenAI 
 
 **[Live demo](https://mydigitaldiary-6bmk.onrender.com)**
 
-![Screenshot of the project](screenshots/digital-diary.png)
+![Screenshot of the project](screenshots/digitalDiary1.png)
+![Screenshot of the project](screenshots/digitalDiary2.png)
 
 ## About
 Users write diary entries and receive AI-generated responses. The focus was on how layout, tone, and flow shape the experience of talking to an AI, so the interface was designed from scratch alongside the backend.
