@@ -2,6 +2,7 @@
  
 An interactive diary built as a full-stack, multi-page web app using the OpenAI API. It explores how AI-driven interactions can feel personal and reflective rather than automated.
 
+## Try it here!
 **[Live demo](https://mydigitaldiary-6bmk.onrender.com)**
 
 ![Screenshot of the project](screenshots/digitalDiary1.png)
