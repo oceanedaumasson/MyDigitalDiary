@@ -5,6 +5,7 @@ An interactive diary built as a full-stack, multi-page web app using the OpenAI 
 ## Try it here!
 **[Live demo](https://mydigitaldiary-6bmk.onrender.com)**
 
+## Screenshots
 ![Screenshot of the project](screenshots/digitalDiary1.png)
 ![Screenshot of the project](screenshots/digitalDiary2.png)
 
